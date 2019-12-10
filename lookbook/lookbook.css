@@ -192,6 +192,7 @@
   height: 670px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .item-section {
   padding: 65px 135px;
@@ -229,7 +230,11 @@
   background-repeat: no-repeat;
   display: inline-block;
 }
-
+.grid-item:hover {
+  box-shadow: -4px 6px 10px -1px rgba(0, 0, 0, 0.75);
+  height: 555px;
+  align-self: center;
+}
 .item-1 {
   grid-column: 1;
   grid-row: 1;
@@ -328,7 +333,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
-  height: 490px;
   padding: 10px 50px;
 }
 .lookbook-item {
@@ -336,6 +340,7 @@
   display: flex;
   justify-content: flex-end;
   padding-bottom: 50px;
+  height: 490px;
 }
 .lookbook-text {
   align-self: center;
@@ -443,4 +448,9 @@
   margin-left: 20px;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1700px) {
+  .lookbook {
+    grid-template-columns: 1fr 1fr;
+  }
 }

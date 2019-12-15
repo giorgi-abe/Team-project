@@ -438,6 +438,7 @@
 }
 .footer > ul > li {
   margin-right: 69px;
+  min-width: 170px;
 }
 .footer > ul > li:last-child {
   margin: 0px;
